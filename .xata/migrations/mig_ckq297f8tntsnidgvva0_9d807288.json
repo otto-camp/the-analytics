@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq297f8tntsnidgvva0",
+  "parentID": "mig_ckq294n8tntsnidgvv90",
+  "checksum": "1:9d807288308eb9e4d6637dd3d19ad6f157a4b4130c34fa67204cfaa937c0876d",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "city",
+          "type": "string"
+        },
+        "table": "Users"
+      }
+    }
+  ]
+}

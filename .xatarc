@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://smail-Yarar-s-workspace-r4lqpv.eu-central-1.xata.sh/db/the-analytics",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

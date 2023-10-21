@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq29m78tntsnidgvve0",
+  "parentID": "mig_ckq29jv8tntsnidgvvd0",
+  "checksum": "1:2486785b72356fb292d647a17dd468edf606c19add4f4ce40921949fef0c5e9f",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "url",
+          "type": "string"
+        },
+        "table": "Page_Views"
+      }
+    }
+  ]
+}

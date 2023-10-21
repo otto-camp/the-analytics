@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq2anjg914v44vb74k0",
+  "parentID": "mig_ckq2ambg914v44vb74j0",
+  "checksum": "1:f96a2828540a4dfa95d27aeda695561f2ec1b01c8ece4c8c9600aef6cf643896",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "region",
+          "type": "string"
+        },
+        "table": "Geographic_Locations"
+      }
+    }
+  ]
+}

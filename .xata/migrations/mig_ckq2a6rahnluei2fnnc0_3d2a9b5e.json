@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq2a6rahnluei2fnnc0",
+  "parentID": "mig_ckq2a2n8tntsnidgvvig",
+  "checksum": "1:3d2a9b5eb3d269dc6d21ad72c42cc41c374c48f4c87315e4e3bce8f15e329a6d",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "data",
+          "type": "text"
+        },
+        "table": "User_Events"
+      }
+    }
+  ]
+}

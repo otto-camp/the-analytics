@@ -1,0 +1,12 @@
+{
+  "id": "mig_ckq29fjahnluei2fnnb0",
+  "parentID": "mig_ckq29c3g914v44vb74f0",
+  "checksum": "1:2ed9d4110b6b91d3a2f3a2757646b2d084d46971121945b075af0c50c2baeeb7",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Page_Views"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq29278tntsnidgvv80",
+  "parentID": "mig_ckq28vf8tntsnidgvv70",
+  "checksum": "1:ca83ec3fe589fbe039baf232549a982aa281cea9b06e453aa24cbb9b6b243228",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "agent",
+          "type": "string"
+        },
+        "table": "Users"
+      }
+    }
+  ]
+}

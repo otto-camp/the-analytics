@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq2ae3g914v44vb74h0",
+  "parentID": "mig_ckq2aav8tntsnidgvvk0",
+  "checksum": "1:f83a0d2c967579b6fc0c7c39f2aedf47dd1f7cc5e4de0bfa2b3441c0c209a777",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "referral_url",
+          "type": "string"
+        },
+        "table": "Referrals"
+      }
+    }
+  ]
+}

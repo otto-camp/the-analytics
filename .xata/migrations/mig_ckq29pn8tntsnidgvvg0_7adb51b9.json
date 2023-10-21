@@ -1,0 +1,14 @@
+{
+  "id": "mig_ckq29pn8tntsnidgvvg0",
+  "parentID": "mig_ckq29o78tntsnidgvvf0",
+  "checksum": "1:7adb51b986b3bde5054db8b7fbb6767947fbc241e21899fe9f0418324ac236b5",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "referral_url",
+        "oldName": "referrel_url",
+        "table": "Page_Views"
+      }
+    }
+  ]
+}

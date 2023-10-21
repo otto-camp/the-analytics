@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq28vf8tntsnidgvv70",
+  "parentID": "mig_ckq28nn8tntsnidgvur0",
+  "checksum": "1:0cb9ae2177cb46148997ca4dba3461a3623565e1f85e50f27f05959e07939c58",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "ip",
+          "type": "string"
+        },
+        "table": "Users"
+      }
+    }
+  ]
+}

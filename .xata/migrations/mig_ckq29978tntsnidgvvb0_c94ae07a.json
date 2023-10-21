@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq29978tntsnidgvvb0",
+  "parentID": "mig_ckq297f8tntsnidgvva0",
+  "checksum": "1:c94ae07a641017432f6abc652d372147a55835f427a60802b6f85cb1c80c2834",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "platform",
+          "type": "string"
+        },
+        "table": "Users"
+      }
+    }
+  ]
+}

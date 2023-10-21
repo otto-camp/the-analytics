@@ -1,0 +1,12 @@
+{
+  "id": "mig_ckq2aav8tntsnidgvvk0",
+  "parentID": "mig_ckq2a6rahnluei2fnnc0",
+  "checksum": "1:fc7c1a1257070757b0ebf965cc52a3aece72e327d56df7fe1b7ba01096a61568",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Referrals"
+      }
+    }
+  ]
+}

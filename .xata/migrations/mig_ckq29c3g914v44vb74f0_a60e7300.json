@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq29c3g914v44vb74f0",
+  "parentID": "mig_ckq29an8tntsnidgvvc0",
+  "checksum": "1:a60e7300469ba27182c81a024607c1dc8fde55d87a713eede764db6645de88c2",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "device",
+          "type": "string"
+        },
+        "table": "Users"
+      }
+    }
+  ]
+}

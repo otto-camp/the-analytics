@@ -1,0 +1,12 @@
+{
+  "id": "mig_ckq2aiv8tntsnidgvvlg",
+  "parentID": "mig_ckq2ag3g914v44vb74i0",
+  "checksum": "1:8484a002d12b9f948f9dfe7f38e943f869605e366493b424b7eec23e3cf7b661",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Geographic_Locations"
+      }
+    }
+  ]
+}

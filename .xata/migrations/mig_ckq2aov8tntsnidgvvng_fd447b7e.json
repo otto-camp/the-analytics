@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq2aov8tntsnidgvvng",
+  "parentID": "mig_ckq2anjg914v44vb74k0",
+  "checksum": "1:fd447b7efd052d488b03c891be3f6aad021d099bd058261e3e7caeeaf5fcfa38",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "city",
+          "type": "string"
+        },
+        "table": "Geographic_Locations"
+      }
+    }
+  ]
+}

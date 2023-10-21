@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckq29jv8tntsnidgvvd0",
+  "parentID": "mig_ckq29fjahnluei2fnnb0",
+  "checksum": "1:194a46f65711a03e9b0928a7d3fc29c3c093657a11ae76893359412de2b398e9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "user_id",
+          "type": "string"
+        },
+        "table": "Page_Views"
+      }
+    }
+  ]
+}
