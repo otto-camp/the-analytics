@@ -1,0 +1,19 @@
+{
+  "id": "mig_ckqjfof8tntsnidh2g50",
+  "parentID": "mig_ckqjfkrahnluei2fpl5g",
+  "checksum": "1:512d8f41789e1d8adbe94a86f8a717aa06d872315947a2a058d032a50b2fd26a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "geo",
+          "type": "link",
+          "link": {
+            "table": "Geographic_Locations"
+          }
+        },
+        "table": "Users"
+      }
+    }
+  ]
+}

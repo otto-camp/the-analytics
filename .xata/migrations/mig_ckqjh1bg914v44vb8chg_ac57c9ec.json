@@ -1,0 +1,14 @@
+{
+  "id": "mig_ckqjh1bg914v44vb8chg",
+  "parentID": "mig_ckqjfof8tntsnidh2g50",
+  "checksum": "1:ac57c9eccc18416a48acc3863e94569c4186390fc01b83864eb736c7d2140bbe",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "country",
+        "oldName": "name",
+        "table": "Geographic_Locations"
+      }
+    }
+  ]
+}

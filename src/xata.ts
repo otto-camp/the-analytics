@@ -12,11 +12,10 @@ const tables = [
     columns: [
       { name: "ip", type: "string" },
       { name: "agent", type: "string" },
-      { name: "country", type: "string" },
-      { name: "city", type: "string" },
       { name: "platform", type: "string" },
       { name: "os", type: "string" },
       { name: "device", type: "string" },
+      { name: "geo", type: "link", link: { table: "Geographic_Locations" } },
     ],
   },
   {
@@ -45,11 +44,11 @@ const tables = [
   {
     name: "Geographic_Locations",
     columns: [
-      { name: "code", type: "string" },
-      { name: "name", type: "string" },
+      { name: "country", type: "string" },
       { name: "region", type: "string" },
       { name: "city", type: "string" },
     ],
+    revLinks: [{ column: "geo", table: "Users" }],
   },
 ] as const;
 

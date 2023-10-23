@@ -1,0 +1,13 @@
+{
+  "id": "mig_ckqjh5rahnluei2fpl6g",
+  "parentID": "mig_ckqjh1bg914v44vb8chg",
+  "checksum": "1:cc89aa33a30d281ef1a8d6643313ac1f53570b5b014d27e1fd9dcb922db50033",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "code",
+        "table": "Geographic_Locations"
+      }
+    }
+  ]
+}

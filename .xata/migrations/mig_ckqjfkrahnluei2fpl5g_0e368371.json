@@ -1,0 +1,13 @@
+{
+  "id": "mig_ckqjfkrahnluei2fpl5g",
+  "parentID": "mig_ckqjfk3ahnluei2fpl4g",
+  "checksum": "1:0e368371a682b6b006a62026b10d3c0512aa61933b94601f233ee01e19bc757c",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "country",
+        "table": "Users"
+      }
+    }
+  ]
+}

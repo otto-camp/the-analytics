@@ -1,0 +1,13 @@
+{
+  "id": "mig_ckqjfk3ahnluei2fpl4g",
+  "parentID": "mig_ckq2aov8tntsnidgvvng",
+  "checksum": "1:80463553ba97589aab914bb8c1c0e8114646e43b3cd48792cee6b81f5e8185da",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "city",
+        "table": "Users"
+      }
+    }
+  ]
+}
