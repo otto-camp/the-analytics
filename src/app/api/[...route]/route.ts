@@ -15,7 +15,7 @@ app.get("/ping", async (c) => {
   const geo = (await fetch("http://localhost:3000/api/geo", {
     method: "POST",
     body: JSON.stringify({ ip: ip }),
-  }).then(async (res) => await res.json())) as LocationInfo;
+  }).then(async (res) => await res.json())) ;
 
   return c.json({ ip: ip, geo: geo });
 });
