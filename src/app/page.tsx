@@ -1,3 +1,4 @@
+import { env } from "@/env.mjs";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const data = await fetch("http://localhost:3000/api/ping").then(
+  const data = await fetch(`${env.NEXT_PUBLIC_APP_URL}/api/ping`).then(
     async (res) => await res.json()
   );
   return (
