@@ -1,0 +1,13 @@
+{
+  "id": "mig_ckshc403aq2somqqh0qg",
+  "parentID": "mig_ckshc12t1h0g125to6gg",
+  "checksum": "1:af66aa5ecfce4b26c3e5efad9195912b35644927503e4092be69a84abdb33a1b",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "data",
+        "table": "User_Events"
+      }
+    }
+  ]
+}

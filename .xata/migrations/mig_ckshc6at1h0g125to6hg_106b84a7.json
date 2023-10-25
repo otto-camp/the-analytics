@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckshc6at1h0g125to6hg",
+  "parentID": "mig_ckshc403aq2somqqh0qg",
+  "checksum": "1:106b84a79c9c9cca0569e8a20137b9131a622d8b95be04c3c6d651cf85a11570",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "data",
+          "type": "json"
+        },
+        "table": "User_Events"
+      }
+    }
+  ]
+}

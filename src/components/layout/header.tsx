@@ -4,9 +4,12 @@ import { ThemeToggle } from "../theme-toggle";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between p-4 mb-12">
+    <header className="flex items-center justify-between p-4 mb-6">
       <div>
-        <Link href="/" className={buttonVariants({ variant: "ghost",size:'lg' })}>
+        <Link
+          href="/"
+          className={buttonVariants({ variant: "ghost", size: "lg" })}
+        >
           Home
         </Link>
       </div>

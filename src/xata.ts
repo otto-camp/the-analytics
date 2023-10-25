@@ -17,21 +17,26 @@ const tables = [
       { name: "device", type: "string" },
       { name: "geo", type: "link", link: { table: "Geographic_Locations" } },
     ],
+    revLinks: [
+      { column: "user_id", table: "Sessions" },
+      { column: "user_id", table: "User_Events" },
+      { column: "user_id", table: "Page_Views" },
+    ],
   },
   {
     name: "Page_Views",
     columns: [
-      { name: "user_id", type: "string" },
       { name: "url", type: "string" },
       { name: "referral_url", type: "string" },
+      { name: "user_id", type: "link", link: { table: "Users" } },
     ],
   },
   {
     name: "User_Events",
     columns: [
-      { name: "user_id", type: "string" },
       { name: "name", type: "string" },
-      { name: "data", type: "text" },
+      { name: "user_id", type: "link", link: { table: "Users" } },
+      { name: "data", type: "json" },
     ],
   },
   {
@@ -49,6 +54,15 @@ const tables = [
       { name: "city", type: "string" },
     ],
     revLinks: [{ column: "geo", table: "Users" }],
+  },
+  {
+    name: "Sessions",
+    columns: [
+      { name: "user_id", type: "link", link: { table: "Users" } },
+      { name: "start_date", type: "datetime" },
+      { name: "end_date", type: "datetime" },
+      { name: "duration", type: "int" },
+    ],
   },
 ] as const;
 
@@ -70,12 +84,16 @@ export type ReferralsRecord = Referrals & XataRecord;
 export type GeographicLocations = InferredTypes["Geographic_Locations"];
 export type GeographicLocationsRecord = GeographicLocations & XataRecord;
 
+export type Sessions = InferredTypes["Sessions"];
+export type SessionsRecord = Sessions & XataRecord;
+
 export type DatabaseSchema = {
   Users: UsersRecord;
   Page_Views: PageViewsRecord;
   User_Events: UserEventsRecord;
   Referrals: ReferralsRecord;
   Geographic_Locations: GeographicLocationsRecord;
+  Sessions: SessionsRecord;
 };
 
 const DatabaseClient = buildClient();

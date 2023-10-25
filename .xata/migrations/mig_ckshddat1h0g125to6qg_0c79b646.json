@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckshddat1h0g125to6qg",
+  "parentID": "mig_ckshca2t1h0g125to6ig",
+  "checksum": "1:0c79b646c134d9c21f1e676befb7dd83e6a81dcbcc863e71f002ee9cfda83570",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "start_date",
+          "type": "datetime"
+        },
+        "table": "Sessions"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "mig_ckshbpjts3dbhjlbsqsg",
+  "parentID": "mig_ckshbkat1h0g125to6fg",
+  "checksum": "1:6d4b0e61216833050107cf7bdb2e074aae9dd6a93a9235b04a78d195adde2e69",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "user_id",
+          "type": "link",
+          "link": {
+            "table": "Users"
+          }
+        },
+        "table": "Sessions"
+      }
+    }
+  ]
+}

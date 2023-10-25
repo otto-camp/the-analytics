@@ -1,0 +1,13 @@
+{
+  "id": "mig_ckshc8g3aq2somqqh0rg",
+  "parentID": "mig_ckshc6at1h0g125to6hg",
+  "checksum": "1:777dad2150663d1570fd065b612cac93e7ac53b2c8f0d8bbcc0a4f12e202c07b",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "user_id",
+        "table": "Page_Views"
+      }
+    }
+  ]
+}

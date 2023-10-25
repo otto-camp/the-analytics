@@ -1,0 +1,16 @@
+{
+  "id": "mig_ckshdrqt1h0g125to71g",
+  "parentID": "mig_ckshdeqt1h0g125to6rg",
+  "checksum": "1:4de257d1d9d0980283886030d6439d0504f9993073367f227d8146eb311823e6",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "duration",
+          "type": "int"
+        },
+        "table": "Sessions"
+      }
+    }
+  ]
+}
