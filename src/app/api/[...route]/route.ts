@@ -1,4 +1,4 @@
-import { LocationInfo } from "@/type";
+import { env } from "@/env.mjs";
 import { Hono } from "hono";
 import { logger } from "hono/logger";
 import { handle } from "hono/vercel";
@@ -12,10 +12,10 @@ app.use("*", logger());
 app.get("/ping", async (c) => {
   const ip = c.req.header("X-Forwarded-For");
 
-  const geo = (await fetch("http://localhost:3000/api/geo", {
+  const geo = await fetch(`${env.NEXT_PUBLIC_APP_URL}/api/geo`, {
     method: "POST",
     body: JSON.stringify({ ip: ip }),
-  }).then(async (res) => await res.json())) ;
+  }).then(async (res) => await res.json());
 
   return c.json({ ip: ip, geo: geo });
 });
