@@ -11,10 +11,8 @@ const tables = [
     name: "Users",
     columns: [
       { name: "ip", type: "string" },
-      { name: "agent", type: "string" },
       { name: "platform", type: "string" },
       { name: "os", type: "string" },
-      { name: "device", type: "string" },
       { name: "geo", type: "link", link: { table: "Geographic_Locations" } },
     ],
     revLinks: [
@@ -27,8 +25,8 @@ const tables = [
     name: "Page_Views",
     columns: [
       { name: "url", type: "string" },
-      { name: "referral_url", type: "string" },
       { name: "user_id", type: "link", link: { table: "Users" } },
+      { name: "referral_id", type: "link", link: { table: "Referrals" } },
     ],
   },
   {
@@ -45,6 +43,7 @@ const tables = [
       { name: "referral_url", type: "string" },
       { name: "source_url", type: "string" },
     ],
+    revLinks: [{ column: "referral_id", table: "Page_Views" }],
   },
   {
     name: "Geographic_Locations",

@@ -1,0 +1,13 @@
+{
+  "id": "mig_ckv4c5k9t3n09hmqimn0",
+  "parentID": "mig_ckshdrqt1h0g125to71g",
+  "checksum": "1:75e597e2433b19dc28f49a6e1f0644bc02cf08e9ee865d9bc59908234598c0fd",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "device",
+        "table": "Users"
+      }
+    }
+  ]
+}

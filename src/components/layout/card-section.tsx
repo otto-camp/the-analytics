@@ -11,9 +11,9 @@ export default function CardSection() {
           <User />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">$45,231.89</div>
+          <div className="text-2xl font-bold">NaN</div>
           <p className="text-xs text-muted-foreground">
-            +20.1% from last month
+            changes text...
           </p>
         </CardContent>
       </Card>
@@ -23,9 +23,9 @@ export default function CardSection() {
           <Eye />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">$45,231.89</div>
+          <div className="text-2xl font-bold">NaN</div>
           <p className="text-xs text-muted-foreground">
-            +20.1% from last month
+            changes text...
           </p>
         </CardContent>
       </Card>
@@ -35,9 +35,9 @@ export default function CardSection() {
           <Timer />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">$45,231.89</div>
+          <div className="text-2xl font-bold">NaN</div>
           <p className="text-xs text-muted-foreground">
-            +20.1% from last month
+            changes text...
           </p>
         </CardContent>
       </Card>
@@ -47,9 +47,9 @@ export default function CardSection() {
           <Activity />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">$45,231.89</div>
+          <div className="text-2xl font-bold">NaN</div>
           <p className="text-xs text-muted-foreground">
-            +20.1% from last month
+            changes text...
           </p>
         </CardContent>
       </Card>

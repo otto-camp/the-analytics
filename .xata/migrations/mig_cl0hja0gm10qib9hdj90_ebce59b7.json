@@ -1,0 +1,19 @@
+{
+  "id": "mig_cl0hja0gm10qib9hdj90",
+  "parentID": "mig_cl0hj72ov1kfdnfikl0g",
+  "checksum": "1:ebce59b77ef31d3a623af2542afd42fab2bf2983562d368bdc74ab4760f5791a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "referral_id",
+          "type": "link",
+          "link": {
+            "table": "Referrals"
+          }
+        },
+        "table": "Page_Views"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mig_cl0hj72ov1kfdnfikl0g",
+  "parentID": "mig_ckv4c9pfg13mgorvr0ag",
+  "checksum": "1:47f2d69d18e7fd2491f74f6fed699e05a1635dc7a7eea04822240bbe6ea2320f",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "referral_url",
+        "table": "Page_Views"
+      }
+    }
+  ]
+}
