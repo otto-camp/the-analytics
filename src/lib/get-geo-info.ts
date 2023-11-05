@@ -1,5 +1,5 @@
 import { env } from "@/env.mjs";
-import { LocationInfo } from "@/type";
+import { LocationInfo } from "@/types/type";
 
 export async function getGeoInfo(ip: string | undefined | null) {
   if (ip === undefined || ip === null) {

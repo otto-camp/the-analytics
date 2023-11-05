@@ -1,6 +1,8 @@
+"use client";
+import { links } from "@/app/page";
 import Link from "next/link";
-import { Button, buttonVariants } from "../ui/button";
 import { ThemeToggle } from "../theme-toggle";
+import { buttonVariants } from "../ui/button";
 
 export default function Header() {
   return (
@@ -14,10 +16,15 @@ export default function Header() {
         </Link>
       </div>
       <nav className="flex items-center justify-center gap-8">
-        <Button>A</Button>
-        <Button>A</Button>
-        <Button>A</Button>
-        <Button>A</Button>
+        {links.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={buttonVariants({ variant: "default" })}
+          >
+            {link.name}
+          </Link>
+        ))}
         <ThemeToggle />
       </nav>
     </header>

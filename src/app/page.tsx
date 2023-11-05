@@ -1,23 +1,33 @@
-import CardSection from "@/components/layout/card-section";
-import { getXataClient } from "@/xata";
+import { buttonVariants } from "@/components/ui/button";
 import { type Metadata } from "next";
+import Link from "next/link";
+import { cn } from "../lib/utils";
 
 export const metadata: Metadata = {
   title: "The Analytics",
 };
 
+export const links = [
+  { href: "textify", name: "Textify" },
+  { href: "portfolio", name: "Portfolio" },
+];
+
 export default async function Home() {
-  const xata = await getXataClient();
-
-  const users = await xata.db.Users.getAll();
-
   return (
     <main className="p-4 space-y-4 min-h-screen">
-      <section className="space-y-6">
-        <h1 className="text-2xl lg:text-4xl font-semibold">Dashboard</h1>
-      </section>
-      <CardSection />
-      {JSON.stringify(users, null, 2)}
+      {links.map((link) => (
+        <div key={link.href}>
+          <Link
+            href={link.href}
+            className={cn(
+              buttonVariants({ variant: "default" }),
+              "min-w-[300px]"
+            )}
+          >
+            {link.name}
+          </Link>
+        </div>
+      ))}
     </main>
   );
 }

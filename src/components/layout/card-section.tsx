@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Activity, Eye, Timer, User } from "lucide-react";
 
-export default function CardSection() {
+export default function CardSection({ users }: { users: number }) {
   return (
     <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
       <Card>
@@ -11,10 +11,8 @@ export default function CardSection() {
           <User />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">NaN</div>
-          <p className="text-xs text-muted-foreground">
-            changes text...
-          </p>
+          <div className="text-2xl font-bold">{users}</div>
+          <p className="text-xs text-muted-foreground">changes text...</p>
         </CardContent>
       </Card>
       <Card>
@@ -24,9 +22,7 @@ export default function CardSection() {
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">NaN</div>
-          <p className="text-xs text-muted-foreground">
-            changes text...
-          </p>
+          <p className="text-xs text-muted-foreground">changes text...</p>
         </CardContent>
       </Card>
       <Card>
@@ -36,9 +32,7 @@ export default function CardSection() {
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">NaN</div>
-          <p className="text-xs text-muted-foreground">
-            changes text...
-          </p>
+          <p className="text-xs text-muted-foreground">changes text...</p>
         </CardContent>
       </Card>
       <Card>
@@ -48,9 +42,7 @@ export default function CardSection() {
         </CardHeader>
         <CardContent>
           <div className="text-2xl font-bold">NaN</div>
-          <p className="text-xs text-muted-foreground">
-            changes text...
-          </p>
+          <p className="text-xs text-muted-foreground">changes text...</p>
         </CardContent>
       </Card>
     </section>

@@ -1,4 +1,4 @@
-import { LocationInfo } from "@/type";
+import { LocationInfo } from "@/types/type";
 import { getXataClient } from "@/xata";
 import type {
   BotInfo,

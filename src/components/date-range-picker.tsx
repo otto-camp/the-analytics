@@ -1,19 +1,47 @@
+"use client";
+
 import { cn } from "@/lib/utils";
-import { addDays, format } from "date-fns";
+import { format, startOfToday, subMonths } from "date-fns";
+import { CalendarIcon } from "lucide-react";
 import React from "react";
 import { DateRange } from "react-day-picker";
-import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import { Button } from "./ui/button";
-import { CalendarIcon } from "lucide-react";
 import { Calendar } from "./ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export function CalendarDateRangePicker({
   className,
-}: React.HTMLAttributes<HTMLDivElement>) {
-  const [date, setDate] = React.useState<DateRange | undefined>({
-    from: new Date(2023, 0, 20),
-    to: addDays(new Date(2023, 0, 20), 20),
-  });
+}: React.HTMLAttributes<HTMLDivElement> & {}) {
+  const defaultDate = {
+    from: subMonths(startOfToday(), 1),
+    to: new Date(),
+  };
+  const [date, setDate] = React.useState<DateRange | undefined>(defaultDate);
+
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const createQueryString = React.useCallback(
+    (dateRange: DateRange) => {
+      const params = new URLSearchParams(searchParams);
+      if (dateRange.from) {
+        params.set("from", format(dateRange.from, "yyyy-MM-dd"));
+      }
+      if (dateRange.to) {
+        params.set("to", format(dateRange.to, "yyyy-MM-dd"));
+      }
+
+      return params.toString();
+    },
+    [searchParams]
+  );
+
+  const handleParamChange = (newDate: DateRange | undefined) => {
+    router.push(pathname + "?" + createQueryString(newDate ?? defaultDate));
+    setDate((prevDate) => newDate);
+  };
 
   return (
     <div className={cn("grid gap-2", className)}>
@@ -48,7 +76,7 @@ export function CalendarDateRangePicker({
             mode="range"
             defaultMonth={date?.from}
             selected={date}
-            onSelect={setDate}
+            onSelect={handleParamChange}
             numberOfMonths={2}
           />
         </PopoverContent>
